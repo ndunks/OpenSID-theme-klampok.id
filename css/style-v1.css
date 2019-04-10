@@ -1,0 +1,27 @@
+header > h1 {
+    text-align: center;
+}
+
+.header-title {
+    line-height: 45px;
+    text-align: center;
+    padding: 15px;
+}
+
+.no-top-border {
+    border-top: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+body {
+    background: url(/desa/themes/klampok.id/img/bg.png) repeat;
+}
+
+a.navbar-brand >img {
+    margin-top: -6px;
+}
+.table-lg tr > td {
+    padding: 8px 15px !important;
+    font-size: medium !important;
+}
