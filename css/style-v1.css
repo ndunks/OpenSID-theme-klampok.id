@@ -15,7 +15,7 @@ header > h1 {
 }
 
 body {
-    background: url(/desa/themes/klampok.id/img/bg.png) repeat;
+    background: url(../img/bg.png) repeat;
 }
 
 a.navbar-brand >img {
