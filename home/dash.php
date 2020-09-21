@@ -40,16 +40,16 @@
     </div>
     <?php endif; ?>
 
-    <?php if(isset($_SESSION['lg']) AND $_SESSION['lg']==1): ?>
+<!--     <?php if(isset($_SESSION['lg']) AND $_SESSION['lg']==1): ?>
     <div class="alert alert-warning">
       Untuk keamanan silahkan ubah kode PIN Anda.
-      <a class="btn btn-sm btn-info" href="<?= site_url('first/mandiri/1/5') ?>">Klik Disini untuk Ubah PIN</a>
+      <a class="btn btn-sm btn-info" href="<?= site_url('mandiri_web/mandiri/1/5') ?>">Klik Disini untuk Ubah PIN</a>
     </div>
     <?php elseif(isset($_SESSION['lg']) AND $_SESSION['lg']==2):
         unset($_SESSION['lg']); ?>
     <div class="alert alert-success">
       PIN Baru berhasil Disimpan!
     </div>
-    <?php endif ?>
+    <?php endif ?> -->
   </div>
 </div>

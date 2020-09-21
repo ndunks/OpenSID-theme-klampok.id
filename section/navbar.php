@@ -5,19 +5,19 @@ $links = array(
         'text' => 'Beranda'
     ),
     array(
-        'link' => 'first/mandiri/1/1',
+        'link' => 'mandiri_web/mandiri/1/1',
         'text' => 'Biodata'
     ),
     array(
-        'link' => 'first/mandiri/1/2',
+        'link' => 'mandiri_web/mandiri/1/2',
         'text' => 'Layanan'
     ),
     array(
-        'link' => 'first/mandiri/1/3',
+        'link' => 'mandiri_web/mandiri/1/3',
         'text' => 'Pelaporan'
     ),
     array(
-        'link' => 'first/mandiri/1/4',
+        'link' => 'mandiri_web/mandiri/1/4',
         'text' => 'Bantuan'
     )
 );
@@ -56,8 +56,8 @@ $links = array(
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                         aria-expanded="false"><?= htmlentities($_SESSION['nama']) ?> <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="<?= site_url('first/mandiri/1/5') ?>">Ganti PIN</a></li>
-                        <li role="separator" class="divider"></li>
+                        <!-- <li><a href="<?= site_url('mandiri_web/mandiri/1/5') ?>">Ganti PIN</a></li>
+                        <li role="separator" class="divider"></li> -->
                         <li><a href="<?= site_url('first/logout') ?>">Keluar</a></li>
                     </ul>
                 </li>
