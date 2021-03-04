@@ -66,7 +66,7 @@ $(function(){
             if( result && result.sukses )
             {
                 placeholder.toggleClass('alert-success', true).html("Login berhasil, memuat ulang halaman...");
-                document.location.reload();
+                document.location = '/index.php/mandiri_web/mandiri/1/1';
             }else
             {
                 placeholder.toggleClass('alert-danger', true).html( result.pesan || "Login gagal" )
