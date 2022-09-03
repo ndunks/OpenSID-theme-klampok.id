@@ -40,7 +40,10 @@
 </div>
 <script>
     (function () {
-        if (location.hash.startsWith('#perangkat')) {
+        $('.nav-tabs a').click(function (e) {
+            location.href = this.href
+        })
+        if (location.hash.indexOf('perangkat') > 0) {
             $('.tab-perangkat').addClass('in active');
         } else {
             //class="active" in active
