@@ -31,7 +31,7 @@ $links = array(
                 <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="<?= site_url('first') ?>">
-                <img src="<?= THEME_URL ?>/img/logo-32x32.png">
+                <img src="<?= $folder_themes ?>/img/logo-32x32.png">
             </a>
         </div>
 

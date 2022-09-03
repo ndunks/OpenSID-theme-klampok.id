@@ -6,7 +6,7 @@
 
     <h4 class="text-center">Masukan NIK dan PIN</h4>
 
-    <form action="<?= site_url('first/auth')?>" class="ajax" method="post">
+    <form action="<?= site_url('layanan-mandiri/cek')?>" class="ajax" method="post">
         <div class="form-group">
             <div class="input-group">
                 <abbr class="input-group-addon" title="Nomor Induk Kependudukan">NIK</abbr>
@@ -34,47 +34,3 @@
         </div>
     </form>
 <?php endif; ?>
-<script type="text/javascript">
-$(function(){
-
-    /**
-    * Aktifkan ajax dengan cara set class "ajax" pada form element, example: <form class="ajax" action="/login" ...>
-    * didalam form harus ada .placeholder dan .btn[type=submit]
-    */
-    function login_ajax(e)
-    {
-    
-        var $form = $(this),
-            placeholder = $form.find('.placeholder'),
-            btn = $form.find('.btn[type=submit]');
-
-        e.preventDefault();
-        
-        // Reset waiting state
-        placeholder.removeClass('alert-success')
-                    .removeClass('alert-danger')
-                    .removeClass('hidden')
-                    .toggleClass('alert-warning', true)
-                    .html('<i class="fa fa-spin fa-spinner"></i><br/>Memproses Login...');
-        
-        // Disable btn, agar tidak multiple click
-        btn.attr('disabled', 'true');
-        
-        $.post($form.attr('action') || '/index.php/first/auth', $form.serialize(), function(result) {
-
-            placeholder.removeClass('alert-warning')
-            if( result && result.sukses )
-            {
-                placeholder.toggleClass('alert-success', true).html("Login berhasil, memuat ulang halaman...");
-                document.location = '/index.php/mandiri_web/mandiri/1/1';
-            }else
-            {
-                placeholder.toggleClass('alert-danger', true).html( result.pesan || "Login gagal" )
-            }
-            btn.removeAttr('disabled');
-        })
-        return false;
-    }
-    $('form.ajax').on('submit', login_ajax)
-})
-</script>
