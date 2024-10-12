@@ -13,15 +13,15 @@ $TITLE = sprintf('%s %s %s',
     </div>
 </header>
 <div class="row">
-    <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2  d-flex justify-content-center">
+    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2  d-flex justify-content-center">
         <div class="panel panel-warning">
             <div class="panel-heading">
                 <img src="<?= $folder_themes ?>/img/logo-small.png">
                 <h3 class="panel-title text-center" style="display: inline"><?= $TITLE ?></h3>
             </div>
             <div class="panel-body text-center">
-                <a href="/layanan-mandiri" class="btn btn-lg btn-info"><i class="fa fa-user"></i> Login Warga</a>
-                <a href="/siteman" class="btn btn-lg btn-success"><i class="fa fa-user-circle"></i> Login Perangkat</a>
+                <a style="margin-bottom: 10px;" href="/layanan-mandiri" class="btn btn-lg btn-info"><i class="fa fa-user"></i> Login Warga</a>
+                <a style="margin-bottom: 10px;" href="/siteman" class="btn btn-lg btn-success"><i class="fa fa-user-circle"></i> Login Perangkat</a>
             </div>
         </div>
     </div>
